@@ -14,7 +14,7 @@ RESTAURANTS = [
 ("Boat Noodles", 4.8, 30),
 ]
 
-request = input('Sort by (rating/time): ')
+request = input('Sort by (rating/time): ').lower()
 if(request  == 'rating'):
     sort_res = sorted(RESTAURANTS, key=by_rating)
     for i in range(len(sort_res)):
